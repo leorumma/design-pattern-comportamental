@@ -2,9 +2,9 @@ package Strategy;
 
 public class DesignPatternStrategyMain {
 
-    public static void main(String[] args) {
-        Context context = new Context(new HexaConversorStrategy());
-        System.out.println(context.converter(10));
+    public static void main(String[] args) throws Exception {
+        ConversorStrategy conversorStrategy = ConversorStrategySelector.getStrategy(ConversorTipo.CONVERSOR_HEXA);
+        System.out.println(conversorStrategy.converter(10));
     }
 
 }
