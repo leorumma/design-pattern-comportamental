@@ -1,12 +1,10 @@
 package Strategy;
 
-public class OctaConversorStrategy implements ConversorStrategy {
-
-    private final Integer base = 8;
+public class OctaConversorStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String converter(int numero) {
-       return Integer.toOctalString(numero);
+       return "0" + Integer.toOctalString(numero).toUpperCase();
     }
 
     @Override
@@ -15,7 +13,7 @@ public class OctaConversorStrategy implements ConversorStrategy {
     }
 
     @Override
-    public int desconverter(String numeroConvertido, int base) {
-        return Integer.parseInt(numeroConvertido, base);
+    public Integer getBase() {
+        return 8;
     }
 }

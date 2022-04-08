@@ -1,12 +1,10 @@
 package Strategy;
 
-public class HexaConversorStrategy implements ConversorStrategy {
-
-    private final Integer base = 16;
+public class HexaConversorStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String converter(int numero) {
-        return Integer.toHexString(numero);
+        return "0x" + Integer.toHexString(numero).toUpperCase();
     }
 
     @Override
@@ -15,7 +13,7 @@ public class HexaConversorStrategy implements ConversorStrategy {
     }
 
     @Override
-    public int desconverter(String numeroConvertido, int base) {
-        return Integer.parseInt(numeroConvertido, base);
+    public Integer getBase() {
+        return 16;
     }
 }

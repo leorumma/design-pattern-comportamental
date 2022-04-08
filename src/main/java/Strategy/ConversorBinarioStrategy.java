@@ -1,12 +1,10 @@
 package Strategy;
 
-public class ConversorBinarioStrategy implements ConversorStrategy {
-
-    private final Integer base = 2;
+public class ConversorBinarioStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String converter(int number) {
-        return Integer.toBinaryString(number);
+        return Integer.toBinaryString(number).toUpperCase() + "b";
     }
 
     @Override
@@ -15,9 +13,8 @@ public class ConversorBinarioStrategy implements ConversorStrategy {
     }
 
     @Override
-    public int desconverter(String numeroConvertido, int base) {
-        return Integer.parseInt(numeroConvertido, base);
+    public Integer getBase() {
+        return 2;
     }
-
 
 }

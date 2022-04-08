@@ -6,6 +6,6 @@ public interface ConversorStrategy {
 
    String quemSouEu();
 
-   int desconverter(String numeroConvertido, int base);
+   int desconverter(String numeroConvertido);
 
 }
