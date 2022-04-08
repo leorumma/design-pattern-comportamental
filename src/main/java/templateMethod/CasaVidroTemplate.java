@@ -1,4 +1,4 @@
-package TemplateMethod;
+package templateMethod;
 
 public class CasaVidroTemplate extends CasaTemplate {
 

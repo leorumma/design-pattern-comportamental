@@ -1,12 +1,12 @@
-package Strategy;
+package strategy;
 
 public abstract class ConversorDefaultStrategy implements ConversorStrategy{
 
     public abstract Integer getBase();
 
     @Override
-    public int desconverter(String numeroConvertido) {
-        return Integer.parseInt(numeroConvertido, getBase());
+    public int converterToBase10(String numero) {
+        return Integer.parseInt(numero, getBase());
     }
 
 }

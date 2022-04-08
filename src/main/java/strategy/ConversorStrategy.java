@@ -1,4 +1,4 @@
-package Strategy;
+package strategy;
 
 public interface ConversorStrategy {
 
@@ -6,6 +6,6 @@ public interface ConversorStrategy {
 
    String quemSouEu();
 
-   int desconverter(String numeroConvertido);
+   int converterToBase10(String numero);
 
 }
