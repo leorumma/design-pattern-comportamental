@@ -12,9 +12,7 @@ public class DesignPatternStrategyMain {
                 "Digite um numero na base decimal para ser convertido para essa base");
 
         ConversorTipo tipo = ConversorTipo.valueOf(in.nextLine());
-
         String numeroToBase10 = in.nextLine();
-
         int numeroParaConverter = in.nextInt();
 
 

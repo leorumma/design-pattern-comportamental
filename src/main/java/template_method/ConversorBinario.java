@@ -1,6 +1,4 @@
-package template_method_strategy;
-
-import strategy.ConversorBinarioStrategy;
+package template_method;
 
 public class ConversorBinario extends ConversorTemplate {
 
@@ -10,8 +8,8 @@ public class ConversorBinario extends ConversorTemplate {
     }
 
     @Override
-    public String quemSouEu() {
-        return ConversorBinarioStrategy.class.getSimpleName();
+    public String getTipoConversor() {
+        return ConversorBinario.class.getSimpleName();
     }
 
     @Override
