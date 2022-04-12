@@ -8,10 +8,10 @@ public class ConversorStrategySelector {
             return new ConversorBinarioStrategy();
         }
         if (conversorTipo.equals(ConversorTipo.HEXA)) {
-            return new HexaConversorStrategy();
+            return new ConversorHexaStrategy();
         }
         if (conversorTipo.equals(ConversorTipo.OCTA)) {
-            return new OctaConversorStrategy();
+            return new ConversorOctaStrategy();
         }
         throw new Exception("Nenhuma Strategy Definida");
     }

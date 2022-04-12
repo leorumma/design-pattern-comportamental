@@ -1,6 +1,6 @@
 package template_method_strategy;
 
-public class BinarioConversorStrategy extends ConversorDefaultStrategy {
+public class ConversorBinarioStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String converter(int numero) {
@@ -9,7 +9,7 @@ public class BinarioConversorStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String quemSouEu() {
-        return BinarioConversorStrategy.class.getSimpleName();
+        return ConversorBinarioStrategy.class.getSimpleName();
     }
 
     @Override

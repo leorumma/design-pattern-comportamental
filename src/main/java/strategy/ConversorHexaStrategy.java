@@ -1,6 +1,6 @@
-package template_method_strategy;
+package strategy;
 
-public class HexaConversorStrategy extends ConversorDefaultStrategy {
+public class ConversorHexaStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String converter(int numero) {
@@ -9,7 +9,7 @@ public class HexaConversorStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String quemSouEu() {
-        return HexaConversorStrategy.class.getSimpleName();
+        return ConversorHexaStrategy.class.getSimpleName();
     }
 
     @Override

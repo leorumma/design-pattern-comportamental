@@ -1,6 +1,6 @@
 package strategy;
 
-public class OctaConversorStrategy extends ConversorDefaultStrategy {
+public class ConversorOctaStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String converter(int numero) {
@@ -9,7 +9,7 @@ public class OctaConversorStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String quemSouEu() {
-        return OctaConversorStrategy.class.getSimpleName();
+        return ConversorOctaStrategy.class.getSimpleName();
     }
 
     @Override

@@ -1,6 +1,6 @@
 package template_method_strategy;
 
-public class OctarConversorStrategy extends ConversorDefaultStrategy {
+public class ConversorOctaStrategy extends ConversorDefaultStrategy {
     @Override
     public String converter(int numero) {
         return "0" + Integer.toOctalString(numero).toUpperCase();
@@ -8,7 +8,7 @@ public class OctarConversorStrategy extends ConversorDefaultStrategy {
 
     @Override
     public String quemSouEu() {
-        return OctarConversorStrategy.class.getSimpleName();
+        return ConversorOctaStrategy.class.getSimpleName();
     }
 
     @Override

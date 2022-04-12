@@ -2,7 +2,7 @@ package template_method_strategy;
 
 import java.util.Scanner;
 
-public class TemplateMethodStrategyMain {
+public class TemplateStrategyMain {
 
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
