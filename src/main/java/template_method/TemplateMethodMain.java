@@ -1,6 +1,6 @@
 package template_method;
 
-public class TemplateMethodStrategyMain {
+public class TemplateMethodMain {
 
     public static void main(String[] args) {
         ConversorTemplate conversorBinario = new ConversorBinario();
