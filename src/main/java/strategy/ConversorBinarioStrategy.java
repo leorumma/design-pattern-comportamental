@@ -8,7 +8,7 @@ public class ConversorBinarioStrategy extends ConversorDefaultStrategy {
     }
 
     @Override
-    public String quemSouEu() {
+    public String getConversorStrategy() {
         return ConversorBinarioStrategy.class.getSimpleName();
     }
 

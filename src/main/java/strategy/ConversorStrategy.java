@@ -2,9 +2,11 @@ package strategy;
 
 public interface ConversorStrategy {
 
+   Integer getBase();
+
    String converter(int numero);
 
-   String quemSouEu();
+   String getConversorStrategy();
 
    int converterToBase10(String numero);
 

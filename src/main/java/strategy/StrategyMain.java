@@ -18,7 +18,7 @@ public class StrategyMain {
 
         System.out.println("Iniciando a Conversão");
         ConversorStrategy conversorStrategy = ConversorStrategySelector.getStrategy(tipo);
-        System.out.println("Conversor Escolhido " + conversorStrategy.quemSouEu());
+        System.out.println("Conversor Escolhido " + conversorStrategy.getConversorStrategy());
 
         String numeroConvertido = conversorStrategy.converter(numeroParaConverter);
         System.out.println("Numero Convertido " + numeroConvertido);

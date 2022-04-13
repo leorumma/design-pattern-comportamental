@@ -8,7 +8,7 @@ public class ConversorHexaStrategy extends ConversorDefaultStrategy {
     }
 
     @Override
-    public String quemSouEu() {
+    public String getConversorStrategy() {
         return ConversorHexaStrategy.class.getSimpleName();
     }
 

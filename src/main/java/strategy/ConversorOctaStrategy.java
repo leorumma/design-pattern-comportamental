@@ -8,7 +8,7 @@ public class ConversorOctaStrategy extends ConversorDefaultStrategy {
     }
 
     @Override
-    public String quemSouEu() {
+    public String getConversorStrategy() {
         return ConversorOctaStrategy.class.getSimpleName();
     }
 
