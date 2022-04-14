@@ -18,12 +18,11 @@ public class StrategyMain {
 
         System.out.println("Iniciando a Conversão");
         System.out.println("Conversor Escolhido " + ConversorStrategySelector.getStrategy(tipo).getConversorStrategy());
-
-        String numeroConvertido = ConversorStrategySelector.getStrategy(tipo).converter(numeroParaConverter);
-        System.out.println("Numero Convertido " + numeroConvertido);
-
-        System.out.println("o numero " + numeroToBase10 + " Para o padrão default decimal eh " + ConversorStrategySelector.getStrategy(tipo).converterToBase10(numeroToBase10));
-
+        System.out.println("Convertendo " + numeroParaConverter +
+                " para a base " + ConversorStrategySelector.getStrategy(tipo).getBase() +
+                " resultou " + ConversorStrategySelector.getStrategy(tipo).converter(numeroParaConverter));
+        System.out.println("Convertendo o " + numeroToBase10 + " na base " + ConversorStrategySelector.getStrategy(tipo).getBase() +
+                " para a base 10 resultou " + ConversorStrategySelector.getStrategy(tipo).converterToBase10(numeroToBase10));
 
 
     }
